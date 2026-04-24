@@ -20,8 +20,8 @@ export interface TopicManifest {
   title: string;
   icon: string;
   color: string;
-  questionTarget: number;
-  activityTypes: ActivityType[];
+  minQuestionCount: number;
+  requiredActivityTypes: ActivityType[];
 }
 
 export interface ContentManifest {
@@ -44,8 +44,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "World History",
     icon: "🌍",
     color: "#DC2626",
-    questionTarget: 700,
-    activityTypes: ["multiple_choice", "timeline_ordering"],
+    minQuestionCount: 700,
+    requiredActivityTypes: ["multiple_choice", "timeline_ordering"],
   },
   {
     id: "political-history",
@@ -53,8 +53,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Political History",
     icon: "🏛️",
     color: "#7C3AED",
-    questionTarget: 600,
-    activityTypes: ["multiple_choice", "essay"],
+    minQuestionCount: 600,
+    requiredActivityTypes: ["multiple_choice", "essay"],
   },
   {
     id: "economic-history",
@@ -62,8 +62,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Economic & Social History",
     icon: "📈",
     color: "#059669",
-    questionTarget: 500,
-    activityTypes: ["multiple_choice"],
+    minQuestionCount: 500,
+    requiredActivityTypes: ["multiple_choice"],
   },
   {
     id: "sources-analysis",
@@ -71,8 +71,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Sources & Evidence",
     icon: "📜",
     color: "#D97706",
-    questionTarget: 500,
-    activityTypes: ["multiple_choice", "document_analysis"],
+    minQuestionCount: 500,
+    requiredActivityTypes: ["multiple_choice", "reading_passage"],
   }
   ],
 };
